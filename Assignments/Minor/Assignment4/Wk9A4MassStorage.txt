@@ -1,0 +1,40 @@
+
+The data rate for a storage device is dependent on many performance metrics
+and read/write speeds can be expressed using two terms: Sustained data rate and
+burst data rate.
+
+Sustained rate is the average, or usual rate at which data can be transferred
+to and from a storage device. It's the most accurate representation of a storage
+devices read/write potential.
+
+Burst data rate is only attributable to storage operations that have been
+optimized to achieve the maximum possible throughput for a storage device.
+This is often unachievable except in scenarios that allow for data to be
+preorganized, or given dedicated access to the data bus.
+
+Examples of the two types are:
+
+Sustained rate: Whenever reading a file from or writing a file to a disk
+the operation will most commonly run at the sustained data rate for the device.
+Sustained rate is used for buffering video and sound files from storage, saving
+and retrieving files, opening programs, and most other common tasks.
+There are many possible drawbacks to storage read/write times including the
+length of time it takes to read data from a disk to the head, head to RAM,
+the bandwidth of the bus, access time to begin retrieving data, and the quality
+of the storage device itself. This means that it is very unlikely for a
+read/write function to ever operate at burst and is usually going to occur
+at the sustained rate for the storage device.
+
+Burst rate: When a storage device through optimization, being given dedicated
+use of the data bus, or access to cache memory, is able to achieve its maximum
+possible data throughput. The most common example of burst rate being triggered
+is when storing from or loading data to RAM due to RAM "pre-loading" information
+required for storage, causing the storage device to not have to manage the
+requirements for the IOP and allowing the burst data rate for a brief time.
+Burst data rate is also possible in other circumstances, for example if the
+storage device is given dedicated access to the data bus without interruption
+from other devices or operations, but this almost never occurs as other
+aspects of the system require access to the data bus and cannot support itself
+if only reading to or writing from a storage device.
+Peripheral graphics cards can use burst data rates, as they preload huge chunks
+of data and are given their own dedicated bus to the CPU and other devices.
